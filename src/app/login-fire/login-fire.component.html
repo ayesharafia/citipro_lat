@@ -1,0 +1,31 @@
+<div class="bg"></div>
+<div class="container">
+  <div  class="login-card"  fxLayoutAlign="center center" fxFlexFill  >
+    <mat-card  class="login-size">
+        <form fxLayoutAlign="stretch" fxLayout="column" layout-align="center center">
+            <mat-form-field>
+            
+              <input matInput type="text" name="username" [(ngModel)]="username" placeholder="User name">
+            </mat-form-field>
+            <mat-form-field>
+            
+              <input matInput type="password" name="password" [(ngModel)]="password" placeholder="Password">
+              </mat-form-field>
+          <button mat-raised-button type="submit" color="primary" (click)=checkLogin_fire() class="btn btn-success">Login</button> 
+          
+          
+          </form>
+          <div *ngIf="showSpinner" class="spinner-grow" role="status" >
+          </div>
+          
+    </mat-card>
+
+    
+</div>
+
+
+
+
+  </div>
+
+  
